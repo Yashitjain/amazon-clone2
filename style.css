@@ -1,0 +1,169 @@
+body{
+    background-color: whitesmoke;
+}
+
+.head{
+    width: 100%;
+    /* position: fixed; */
+    padding-top: 10px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    /* gap: 1rem; */
+    background-color: black;
+}
+
+.head > div{
+    color: white;
+    /* font-size: 1.2rem; */
+    font-weight: 700;
+    padding: 0px;
+}
+#amazon_img{
+    width: 100px;
+    padding-left:1px ;
+    margin-left: 0px;
+}
+#cart_img{
+    height: 2em;
+    width: 2em;
+}
+.prime_video{
+    height: 70vh;
+    width: 100%;
+    background-image: url("./imgs/prime_video\ \(1\).jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+.prime_video>img{
+    object-fit: fill;
+}
+
+
+.prod_cont_1,.prod_cont_2{
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+.cont1,.cont2{
+    /* padding-left: 1rem; */
+    width: 40%;
+    background-color: white;
+    margin: 1em;
+    padding-bottom: 1rem;
+    align-items: center;
+}
+
+.star{
+    height: 1em;
+    width: 1em;
+}
+.rupee{
+    height: 1em;
+    width: 1em;
+}
+.prod_price{
+    font-size: 2em;
+}
+#prod_book{
+    height: 50vh;
+    width: 40%;
+}
+#prod_phone{
+    height: 56vh;
+    width: 55%;
+}
+#prod_watch{
+    height: 50vh;
+    width: 40%;
+}
+#prod_speaker{
+    height: 51vh;
+    width: 45%;
+}
+#prod_tablet{
+    height: 51vh;
+    width: 45%;
+}
+.add_to_cart {
+    background-color: coral;
+    border: 1em blacksoli;
+    border-radius: 20%;
+    font-size: medium;
+    font-weight: 700;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+.cart_button:hover{
+    background-color: white;
+}
+
+.amazon_logo{
+    display: flex;
+    justify-content: center;
+}
+.amazon_logo_black{
+    height: 10rem;
+    width: 15rem;
+}
+.signinBox{
+    display: flex;
+    justify-content: center;
+    /* background-color: antiquewhite; */
+}
+
+.box{
+    /* height: 60vh; */
+    width:max-content;
+    border: 2px solid black;
+    padding:2em ;
+}
+
+.signIn{
+    width: 80%;
+    background-color: goldenrod;
+    border: 5px;
+    border-radius: 30%;
+    margin: 1em;
+    padding:3px ;
+    font-weight: 500;
+    transition-duration: 0.1s;
+    cursor: pointer;
+}
+
+.signInButton:hover{
+    background-color: wheat;
+}
+.termsConditions{
+    font-size: 12px;
+    font-weight: 200;
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+.signInForm{
+    margin: 1em;
+}
+
+.pro1{
+    display: inline-flex;
+    width: 90%;
+}
+.abt{
+    align-self: center;
+    width: 70%;
+}
+
+.prod_img_cart{
+    margin: 2rem;
+    margin-right: 0px;
+}
+
+.amount{
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
