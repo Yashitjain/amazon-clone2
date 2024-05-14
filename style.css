@@ -19,6 +19,7 @@ body{
     font-weight: 700;
     padding: 0px;
 }
+
 #amazon_img{
     width: 100px;
     padding-left:1px ;
@@ -87,6 +88,14 @@ body{
     height: 51vh;
     width: 45%;
 }
+.prodImg{
+    height: 30vh;
+    width: 15%;
+    float: left;
+}
+.title{
+    float: right;
+}
 .add_to_cart {
     background-color: coral;
     border: 1em blacksoli;
@@ -153,6 +162,8 @@ body{
 .abt{
     align-self: center;
     width: 70%;
+    margin-left: 1rem;
+    float: right;
 }
 
 .prod_img_cart{
@@ -161,9 +172,81 @@ body{
 }
 
 .amount{
-    align-self: center;
+    align-self: center; 
     font-size: 1rem;
     font-weight: 700;
     margin-top: 1rem;
     margin-right: 2rem;
+}
+
+@media (max-width:400px){
+    .head{
+        display: block;
+    }
+    .head > div{
+        margin-top:10px;
+        margin-bottom: 10px;
+    }
+    .product{
+        display: block;
+    }
+    .prod_cont_1,.prod_cont_2{
+        display: block;
+    }
+    .prod1,.prod2,.prod3{
+        width: fit-content;
+    }
+    .prime_video{
+        height: 20vh;
+        width: 100%;
+        background-image: url("./imgs/prime_video\ \(1\).jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    .signinBox{
+        display: 100%;
+    }
+    #prod_book{
+        height: 30vh;
+        width: 30%;
+    }
+    #prod_phone{
+        height: 30vh;
+        width: 45%;
+    }
+    #prod_watch{
+        height: 30vh;
+        width: 40%;
+    }
+    #prod_speaker{
+        height: 30vh;
+        width: 45%;
+    }
+    #prod_tablet{
+        height: 30vh;
+        width: 35%;
+    }
+    .prodImg{
+        height: 35vh;
+        width: 45%;
+    }
+    .title{
+        font-size: 1rem;
+    }
+    .amount{
+        align-self: center; 
+        font-size: 0.5rem;
+        font-weight: 700;
+        margin-right: 2rem;
+    }
+    .pro1{
+        display: block;
+        height: fit-content;
+        width: fit-content;
+    }
+    .abt{
+        float: none;
+        margin-left: 0px;
+    }
+
 }

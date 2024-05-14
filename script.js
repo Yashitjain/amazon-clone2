@@ -36,7 +36,7 @@ function addelement(title,img,price){
     var prnt = document.getElementById("cont");
     const child = document.createElement("div");
     child.innerHTML=
-    '<div class="pro1" ><div style="width: 30%;" class="prod_img_cart"><img src='+img +' style="height: 300px; width: 200px; position: relative;"></div><div class="abt" style="margin-left: 1rem; float: right;"><h2 style="margin-bottom: 0px; ">'+title+'</h2></b></div><div class="amount"><sup><img src="./imgs/rupee.png" alt="" class="rupee"></sup><span class="prod_price">'+price+' <img src="./imgs/delete.png" style="height:1rem;width:1rem"></span></div></div>'
+    '<div class="pro1" ><div style="width: 30%;" class="prod_img_cart"><img src='+img +' style="height: 300px; width: 200px; position: relative;"></div><div class="abt" ><h2 style="margin-bottom: 0px; ">'+title+'</h2></b></div><div class="amount"><sup><img src="./imgs/rupee.png" alt="" class="rupee"></sup><span class="prod_price">'+price+' <img src="./imgs/delete.png" style="height:1rem;width:1rem"></span></div></div>'
     prnt.appendChild(child);
    
     
@@ -87,3 +87,13 @@ addelementwatch();
 addelementphone();
 addelementspeaker();
 addelementtablet();
+
+if(window.matchMedia(("max-width:400px"))){
+    var abtClass = document.getElementsByClassName("abt");
+    console.log("abt=>"+abtClass);
+    for(let i=0;i<abtClass.length;i++){
+        console.log("abt=>"+abtClass[i]);
+        abtClass[i].setAttribute("margin-left","0px");
+        abtClass[i].setAttribute("float"," ");
+    }
+}
